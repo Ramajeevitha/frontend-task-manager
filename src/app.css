@@ -1,0 +1,38 @@
+/* App.css */
+
+/* Set a background color for the whole app */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Add styling to the app container */
+  .App {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Add a style for headings */
+  h1 {
+    color: #4CAF50;
+    font-size: 36px;
+  }
+  
+  /* Add a style for buttons */
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
