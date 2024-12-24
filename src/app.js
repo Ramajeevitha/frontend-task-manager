@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import RegisterForm from "./components/RegisterForm";
-import LoginForm from "./components/LoginForm";
-import TaskList from "./components/TaskList";
-import TaskForm from "./components/TaskForm";
+import RegisterForm from "./src/components/RegisterForm";
+import LoginForm from "./src/components/LoginForm";
+import TaskList from "./src/components/TaskList";
+import TaskForm from "./src/components/TaskForm";
 import './app.css'; // Import the CSS file
 
 const App = () => {

@@ -4,10 +4,62 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Task Manager Application - Manage your tasks effortlessly.">
+  <meta name="author" content="Your Name">
+  <meta name="keywords" content="Task Manager, React, Productivity">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <title>Task Manager</title>
+  <style>
+    /* Global styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    #root {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    /* Loader style (optional) */
+    .loader {
+      border: 4px solid #f3f3f3;
+      border-top: 4px solid #3498db;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
 </head>
 <body>
-  <div id="root"></div>
-  <!-- The React app will be injected here by ReactDOM -->
+  <div id="root">
+    <!-- The React app will be injected here by ReactDOM -->
+    <!-- Fallback loader in case of delays -->
+    <div class="loader" id="fallback-loader"></div>
+  </div>
+  <script>
+    // Remove fallback loader once React app is injected
+    window.addEventListener('DOMContentLoaded', () => {
+      const loader = document.getElementById('fallback-loader');
+      if (loader) loader.remove();
+    });
+  </script>
 </body>
 </html>
